@@ -1,6 +1,7 @@
 FROM coredns/coredns:latest
 
 ADD Corefile /
+# host file
 ADD https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts /etc/hosts
 
 EXPOSE 53/udp
