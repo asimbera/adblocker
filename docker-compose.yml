@@ -1,0 +1,7 @@
+services:
+  adblocker:
+    build: .
+    ports:
+      - '53:53/udp'
+      - '443:443'
+      - '853:853'

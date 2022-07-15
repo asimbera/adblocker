@@ -1,0 +1,24 @@
+app = "adblocker"
+
+[[services]]
+  internal_port = 53
+  protocol = "udp"
+
+  [[services.ports]]
+    port = 53
+
+[[services]]
+  internal_port = 443
+  protocol = "tcp"
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = 443
+
+[[services]]
+  internal_port = 853
+  protocol = "tcp"
+
+  [[services.ports]]
+    handlers = ["tls"]
+    port = 853
